@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --border-width: 1px;
+            --border-color: black;
+            --background-color: whitesmoke;
+            --text-color: black;
+        }
+        body {
+            font-family: "Fragment Mono", monospace;
+            max-width: 800px;
+            box-sizing: border-box;
+            min-height: calc(100vh - 20px);
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        p, li {
+            font-size: 14px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        div {
+            margin: 0px;
+            padding: 0px;
+        }
+        .small {
+            font-size: 12px;
+        }
+        .medium {
+            font-size: 16px;
+        }
+        .large {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .post-icon {
+            width: 80px;
+            height: 80px;
+        }
+        .post-section {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .top-border {
+            border-top: var(--border-width) solid var(--border-color);
+        }
+        .left-border {
+            border-left: var(--border-width) solid var(--border-color);
+        }
+        .right-border {
+            border-right: var(--border-width) solid var(--border-color);
+        }
+        .bottom-border {
+            border-bottom: var(--border-width) solid var(--border-color);
+        }
+        .vertical-borders {
+            border-top: var(--border-width) solid var(--border-color);
+            border-bottom: var(--border-width) solid var(--border-color);
+        }
+        .side-borders {
+            border-left: var(--border-width) solid var(--border-color);
+            border-right: var(--border-width) solid var(--border-color);
+        }
+        .all-borders {
+            border: var(--border-width) solid var(--border-color);
+        }
+        .all-margin {
+            margin: 20px;
+        }
+        .all-margin-slim {
+            margin: 10px;
+        }
+        .all-padding {
+            padding: 10px;
+        }
+        .bottom-margin {
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        .vertical-margin {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .side-margin {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .horizontal-align {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .vertical-align {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right-hug {
+            margin-left: auto;
+        }
+        .left-hug {
+            margin-right: auto;
+        }
+        .scroll {
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scroll-sideways {
+            overflow-x: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body > div {
+            background-color: var(--background-color);
+        }
+        table {
+            margin: 40px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            font-size: 14px;
+            padding: 8px;
+            text-align: center;
+            font-weight: normal;
+            min-width: 70px;
+        }
+        th,
+        td:first-child {
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="all-borders">
+    <div>
+        <!-- Header -->
+        <div class="bottom-border horizontal-align" style="height: 60px;">
+            <!-- Title -->
+            <a href="/index.html">
+                <h1 class="all-margin large" style="white-space: nowrap">> joel harris</h1>
+            </a>
+            <!-- Blurb -->
+            <div class="left-border horizontal-align" style="height: 60px;">
+                <p class="small all-margin" style="text-align: justify;">Directory of things I create, learn, or want others to know about.</p>
+            </div>
+            <!-- Navigation -->
+            <div class="left-border horizontal-align right-hug" style="height: 60px;">
+                <p class="all-margin medium">Essays</p>
+                <p class="all-margin medium">Projects</p>
+                <p class="all-margin medium">About</p>
+            </div>
+        </div>
+        <div class="bottom-border" style="height: 20px"></div>
+        <!-- Content -->
+        <div class="scroll" style="height: calc(100vh - 176px);">
+            <p class="large all-margin">What language should a data team speak?</p>
+            <div class="bottom-border" style="height: 0px"></div>
+            <div class="all-margin">
+                <p class="medium post-section">> What problem are we trying to solve?</p>
+                <p>A data team gets the best results and has the happiest stakeholders when there is minimal difference between what the data team is offering and what the stakeholders are expecting.</p>
+                <p>A good way to align expectations is to have clear definitions of what data is available for analysis, and clear indications of the effort required to perform the analysis.</p>
+                <p>There are two areas where this needs to be applied:</p>
+                <ol>
+                <li>How the data team markets its services to the business</li>
+                <li>How the data team operates internally</li>
+                </ol>
+                <p>Both parts of the system need to adhere to the same terminology and definitions in order to increase alignment.</p>
+
+                <p class="medium post-section">> A possible approach</p>
+                <p>In order to align both the data team and the business, we need a common language. This will serve as a basis for two things:</p>
+                <ol>
+                <li>How the business asks its questions</li>
+                <li>How the data team structures its data</li>
+                </ol>
+                <p>The language we want both the business and the data team to speak is the language of the business itself. Businesses are composed of two elementary components:</p>
+                <ol>
+                <li>Entities are things are exist – customers, employees, services, products</li>
+                <li>Events are things that happen – work orders, subscriptions, customer movements</li>
+                </ol>
+                <p>In general, events are what the business want to measure, and entities are how we filter or aggregate the events.</p>
+                <p>All entities and events that the business wants to ask questions about should be defined, with accompanying plain English descriptions such as: “a subscription is a period of time where a customer is receiving a service”.</p>
+                <p>This list of entities and events make up the basis of our common language, we call it the “business glossary”.</p>
+                <p>Whenever we talk about entities and events within the data team, as well as with the business, we should ensure that:</p>
+                <ol>
+                <li>They are defined in the business glossary</li>
+                <li>Everyone understands and agrees on the definitions</li>
+                </ol>
+                <p>If either of the two points are not true, then we need to align all parties until they are true. If we do not, we open the door to misunderstandings further down the line.</p>
+                <p>An important artefact that builds on the business glossary is the “event matrix”. This matrix tells us which entities are associated with an event. A simple event matrix might look like this (events on the left, entities on the top):</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Customer</th>
+                            <th>Employee</th>
+                            <th>Service</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Work order</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Subscription</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Customer movement</td>
+                            <td>✓</td>
+                            <td></td>
+                            <td></td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The event matrix gives us an intuitive way of understanding which entities are attached to an event.</p>
+                <p>With the business glossary and the event matrix, we already have most of the information we need, the next part is applying this information.</p>
+
+                <p class="medium post-section">> How do we structure our data?</p>
+                <p>We should align our data with the concepts outlined in the data glossary using two table types:</p>
+                <ol>
+                <li>Facts represent events</li>
+                <li>Dimensions represent entities</li>
+                </ol>
+                <p>The dimensions that are linked to each fact should match the relationships in the event matrix.</p>
+
+                <p class="medium post-section">> How should we gather requirements?</p>
+                <p>We should gather requirements using the language of the business – the business glossary. We should frame these requirements in the form of questions that the business needs answered. Examples include:</p>
+                <ul>
+                <li>How many customers are subscribed?</li>
+                <li>Which services are the most subscribed?</li>
+                <li>Which employees complete the most work orders?</li>
+                </ul>
+                <p>Because of the artefacts we discussed earlier we can very quickly understand two things:</p>
+                <ol>
+                <li>What these questions actually mean – because we have a clean definition of each entity and event in our business glossary</li>
+                <li>Whether we can answer them – because we know which entities and events are associated in our event matrix</li>
+                </ol>
+                <p>By gathering requirements in this way we are able to ensure that the business will get what they are expecting, and increase stakeholder satisfaction.</p>
+
+                <p class="medium post-section">> Can we do even better?</p>
+                <p>At the beginning I mentioned that we can use these techniques to communicate the effort required to perform analysis. We can achieve this by doing three things:</p>
+                <ol>
+                <li>Profiling all of our possible sources of data, even the ones we are not currently using</li>
+                <li>Ensuring that we have business glossary definitions for the entities and events that can be derived from the sources</li>
+                <li>Noting that these entities and events are not currently available for analysis</li>
+                </ol>
+                <p>By doing this, we can prioritise ingestion of new sources as the business starts asking questions about entities and events that are contained in those sources. We can also communicate to the business that effort to answer a question may be low if the source is already ingested – or high if not.</p>
+                <p>Another improvement that can help the business ask more precise questions is including a set of available “attributes” along with each entity and event in the business glossary. Attributes for a customer could include a customer's age, gender, and region. Just as before, we should make sure to clearly define these attributes to reduce any misalignment.</p>
+                <p>Making this information available to the business makes communication much more simple as they can quickly understand which questions they can ask, such as:</p>
+                <ul>
+                <li>How many customers do we have in each region?</li>
+                <li>Which age group has the highest churn percentage?</li>
+                </ul>
+                <p>These attributes should be physically represented by columns in the dimensions we mentioned earlier.</p>
+
+                <p class="medium post-section">> What does this look like in action?</p>
+                <p>Let's imagine that we've:</p>
+                <ul>
+                <li>Created a business glossary with entities, events, attributes, and statuses</li>
+                <li>Created an event matrix that links entities and events</li>
+                <li>Aligned our table and column names with our business glossary</li>
+                <li>Communicated and agreed on business glossary terms internally and with the business</li>
+                </ul>
+                <p>We're now in a position where:</p>
+                <ul>
+                <li>An engineer or analyst working with the data can understand more about the meaning of tables and columns based on the wording</li>
+                <li>A business user can easily shop for a dashboard or ad-hoc analysis by browsing the business glossary and event matrix</li>
+                <li>Requirements can be gathered in the form of plain English questions, referencing entities, events, and attributes</li>
+                <li>Expectations for what the business can and cannot have, as well as effort required, can be communicated clearly in business terms</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-border" style="height: 20px"></div>
+        <!-- Footer -->
+        <div class="top-border horizontal-align" style="height: 50px;">
+            <p class="medium left-hug side-margin">LINKS</p>
+            <!-- Social links -->
+            <div class="horizontal-align right-hug" style="height: 50px;">
+                <p class="medium all-margin">LinkedIn</p>
+                <p class="medium all-margin">GitHub</p>
+                <p class="medium all-margin">Medium</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

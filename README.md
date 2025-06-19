@@ -1,2 +1,0 @@
-# joelharr.is
-Personal website
