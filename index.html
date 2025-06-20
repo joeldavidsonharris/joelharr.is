@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Joel Harris</title>
+    <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
             --border-color: black;
             --background-color: whitesmoke;
             --text-color: black;
+            --sub-text-color: gray; 
         }
         body {
             font-family: "Fragment Mono", monospace;
@@ -110,6 +112,10 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+        .simple-link {
+            color: inherit;
+            text-decoration: none;
+        }
         /* Use background color variable for main container */
         body > div {
             background-color: var(--background-color);
@@ -137,10 +143,10 @@
         </div>
         <div class="bottom-border" style="height: 20px"></div>
         <!-- Content -->
-        <div class="scroll" style="height: calc(100vh - 155px);">
+        <div class="scroll" style="height: calc(100vh - 176px);">
             <!-- Featured posts -->
             <div class="horizontal-align left-hug bottom-border" style="align-items: flex-start;">
-                <p class="medium vertical-margin" style="writing-mode: vertical-rl; transform: rotate(180deg);">FEATURES POSTS</p>
+                <p class="medium vertical-margin" style="writing-mode: vertical-rl; transform: rotate(180deg);">FEATURED POSTS</p>
                 <div class="vertical-align left-border" style="flex: 1; align-items: stretch;">
                     <!-- Post 1 -->
                     <a href="posts/data-team-language.html" style="color: inherit; text-decoration: none;">
@@ -148,7 +154,7 @@
                             <img src="images/post-icons/data-team-language-icon.jpg" class="post-icon">
                             <div class="side-margin">
                                 <p class="medium" style="margin-bottom: 5px; margin-top: 0px;">What language should a data team speak?</p>
-                                <p class="small" style="margin-top: 0px; color: gray;">And the need for a business glossary</p>
+                                <p class="small" style="margin-top: 0px; color: var(--sub-text-color);">And the need for a business glossary</p>
                             </div>
                         </div>
                     </a>
@@ -157,7 +163,7 @@
                             <img src="images/post-icons/making-this-website-icon.jpg" class="post-icon">
                             <div class="side-margin">
                                 <p class="medium" style="margin-bottom: 5px; margin-top: 0px;">Why I (re)made this website</p>
-                                <p class="small" style="margin-top: 0px; color: gray;">And why it looks like this</p>
+                                <p class="small" style="margin-top: 0px; color: var(--sub-text-color);">And why it looks like this</p>
                             </div>
                         </div>
                     </a>
@@ -173,6 +179,7 @@
                         <img src="images/paintings/hawea-painting.jpg" style="display:inline-block;height:120px;padding:10px">
                         <img src="images/paintings/lavendar-painting.jpg" class="left-border" style="display:inline-block;height:120px;padding:10px">
                         <img src="images/paintings/cabin-painting.jpg" class="left-border" style="display:inline-block;height:120px;padding:10px">
+                        <img src="images/paintings/pond-painting.jpg" class="left-border" style="display:inline-block;height:120px;padding:10px">
                         <img src="images/paintings/sunset-painting.jpg" class="left-border" style="display:inline-block;height:120px;padding:10px">
                         <img src="images/paintings/road-painting.jpg" class="left-border" style="display:inline-block;height:120px;padding:10px">
                     </div>
@@ -180,26 +187,50 @@
             </div>
             <div class="bottom-border" style="height: 20px"></div>
             <!-- Lists section -->
-            <div class="horizontal-align left-hug bottom-border" style="align-items:flex-start; max-width:800px;">
-                <div class="all-padding" style="flex-grow: 1;">
-                    <p class="medium">BOOKS</p>
+            <div class="horizontal-align left-hug" style="display: flex; max-width:800px; align-items: stretch;">
+                <div class="all-padding right-border horizontal-align" style="flex: 1; align-items: flex-start;">
+                    <p class="medium" style="margin: 0px; flex: 1;">BOOKS I ENJOYED</p>
+                    <div class="right-hug" style="flex: 2;">
+                        <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Sapiens</p>
+                        <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Fabric of Our Cosmos</p>
+                        <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Chaos</p>
+                        <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Dune</p>
+                    </div>
                 </div>
-                <div class="all-padding" style="flex-grow: 1;">
-                    <p class="medium">BLOGS</p>
-                </div>
-                <div class="all-padding" style="flex-grow: 1;">
-                    <p class="medium">JOBS</p>
+                <div class="all-padding horizontal-align" style="flex: 1; align-items: flex-start;">
+                    <p class="medium" style="margin: 0px; flex: 1;">BLOGS I<br>FOLLOW</p>
+                    <div class="right-hug" style="flex: 2;">
+                        <a href="https://www.paulgraham.com/articles.html" class="simple-link">
+                            <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Paul Graham</p>
+                        </a>
+                        <a href="https://roundup.getdbt.com/archive?sort=top" class="simple-link">
+                            <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Tristan Handy</p>
+                        </a>
+                        <a href="https://blog.asmartbear.com/popular/" class="simple-link">
+                            <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">A Smart Bear</p>
+                        </a>
+                        <a href="https://blog.samaltman.com/" class="simple-link">
+                            <p class="medium" style="text-align: right; margin-top: 0px; margin-bottom: 7px;">Sam Altman</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="top-border" style="height: 20px"></div>
         <!-- Footer -->
         <div class="top-border horizontal-align" style="height: 50px;">
             <p class="medium left-hug side-margin">LINKS</p>
             <!-- Social links -->
             <div class="horizontal-align right-hug" style="height: 50px;">
-                <p class="medium all-margin">LinkedIn</p>
-                <p class="medium all-margin">GitHub</p>
-                <p class="medium all-margin">Medium</p>
+                <a href="https://www.linkedin.com/in/joel-davidson-harris/" class="simple-link">
+                    <p class="medium all-margin">LinkedIn</p>   
+                </a>
+                <a href="https://github.com/joeldavidsonharris" class="simple-link">
+                    <p class="medium all-margin">GitHub</p>
+                </a>
+                <a href="https://medium.com/@joeldavidsonharris" class="simple-link">
+                    <p class="medium all-margin">Medium</p>
+                </a>
             </div>
         </div>
     </div>
