@@ -39,6 +39,10 @@
             margin: 0px;
             padding: 0px;
         }
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--text-color);
+        }
         .small {
             font-size: 12px;
         }
@@ -148,6 +152,7 @@
         }
         .simple-link {
             color: inherit;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -156,24 +161,30 @@
         <!-- Header -->
         <div class="bottom-border horizontal-align" style="height: 60px;">
             <!-- Title -->
-            <a href="/index.html">
-                <h1 class="all-margin large" style="white-space: nowrap">> joel harris</h1>
-            </a>
+             <a href="/index.html" class="simple-link">
+                 <h1 class="all-margin large" style="white-space: nowrap;">> joel harris</h1>
+             </a>
             <!-- Blurb -->
             <div class="left-border horizontal-align" style="height: 60px;">
                 <p class="small all-margin" style="text-align: justify;">Directory of things I create, learn, or want others to know about.</p>
             </div>
             <!-- Navigation -->
             <div class="left-border horizontal-align right-hug" style="height: 60px;">
-                <p class="all-margin medium">Essays</p>
-                <p class="all-margin medium">Projects</p>
-                <p class="all-margin medium">About</p>
+                <a href="/essays.html" class="simple-link">
+                    <p class="all-margin medium">Essays</p>
+                </a>
+                <a href="/projects.html" class="simple-link">
+                    <p class="all-margin medium">Projects</p>
+                </a>
+                <a href="/about.html" class="simple-link">
+                    <p class="all-margin medium">About</p>
+                </a>
             </div>
         </div>
-        <div class="bottom-border" style="height: 20px"></div>
+        <div class="bottom-border" style="height: 20px;"></div>
         <!-- Content -->
         <div class="scroll" style="height: calc(100vh - 176px);">
-            <p class="large all-margin">What language should a data team speak?</p>
+            <p class="large all-margin" style="text-decoration: underline; text-decoration-color: rgb(225, 133, 94);">What language should a data team speak?</p>
             <div class="bottom-border" style="height: 0px"></div>
             <div class="all-margin">
                 <p class="medium post-section">> What problem are we trying to solve?</p>
