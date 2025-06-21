@@ -36,7 +36,7 @@
             padding: 0px;
         }
         a:hover {
-            text-decoration: underline;
+            text-decoration: none;
             text-decoration-color: var(--text-color);
         }
         .small {
@@ -120,6 +120,16 @@
             color: inherit;
             text-decoration: none;
         }
+        .simple-link:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+        .hover-underline:hover {
+            text-decoration: underline;
+        }
+        a p:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="all-borders">
@@ -127,8 +137,8 @@
         <!-- Header -->
         <div class="bottom-border horizontal-align" style="height: 60px;">
             <!-- Title -->
-             <a href="/index.html" style="color: inherit;">
-                 <h1 class="all-margin large" style="white-space: nowrap; text-decoration: underline; text-decoration-color: rgb(225, 133, 94);">> joel harris</h1>
+             <a href="/" style="color: inherit;">
+                 <h1 class="all-margin large" style="white-space: nowrap; text-decoration: underline; text-decoration-color: #e1855e;">> joel harris</h1>
              </a>
             <!-- Blurb -->
             <div class="left-border horizontal-align" style="height: 60px;">
@@ -155,21 +165,36 @@
                 <p class="medium vertical-margin" style="writing-mode: vertical-rl; transform: rotate(180deg);">FEATURED POSTS</p>
                 <div class="vertical-align left-border" style="flex: 1; align-items: stretch;">
                     <!-- Post 1 -->
-                    <a href="/posts/data-team-language.html" class="simple-link">
+                    <a href="/posts/making-this-website.html" class="simple-link">
                         <div class="all-padding horizontal-align">
-                            <img src="/images/post-icons/data-team-language-icon.jpg" class="post-icon">
+                            <img src="/images/post-icons/making-this-website-icon.jpg" class="post-icon">
                             <div class="side-margin">
-                                <p class="medium" style="margin-bottom: 5px; margin-top: 0px;">What language should a data team speak?</p>
-                                <p class="small" style="margin-top: 0px; color: var(--sub-text-color);">And the need for a business glossary</p>
+                                <div>
+                                    <p class="medium" style="margin-bottom: 5px; margin-top: 0px;">Why I (re)made this website</p>
+                                    <p class="small" style="margin-top: 0px; color: var(--sub-text-color);  text-decoration: none;">And why it looks like this</p>
+                                </div>
+                                <div class="horizontal-align" style="align-self: flex-end;">
+                                    <p class="small all-borders" style="text-decoration: none; border-color: grey; font-size: 10px; padding: 5px; margin: 0px; color: var(--sub-text-color);">PROJECT</p>
+                                    <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 10px; padding: 5px; margin: 0px; color: var(--sub-text-color);">JUN 2025</p>
+                                    <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 10px; padding: 5px; margin: 0px; color: var(--sub-text-color);">PERSONAL WEBSITE</p>
+                                </div>
                             </div>
                         </div>
                     </a>
-                    <a href="/posts/making-this-website.html" class="simple-link">
+                    <!-- Post 2 -->
+                    <a href="/posts/data-team-language.html" class="simple-link">
                         <div class="all-padding horizontal-align top-border">
-                            <img src="/images/post-icons/making-this-website-icon.jpg" class="post-icon">
+                            <img src="/images/post-icons/data-team-language-icon.jpg" class="post-icon">
                             <div class="side-margin">
-                                <p class="medium" style="margin-bottom: 5px; margin-top: 0px;">Why I (re)made this website</p>
-                                <p class="small" style="margin-top: 0px; color: var(--sub-text-color);">And why it looks like this</p>
+                                <div>
+                                    <p class="medium" style="margin-bottom: 5px; margin-top: 0px;">What language should a data team speak?</p>
+                                    <p class="small" style="margin-top: 0px; color: var(--sub-text-color); text-decoration: none;">And the need for a business glossary</p>
+                                </div>
+                                <div class="horizontal-align" style="align-self: flex-end;">
+                                    <p class="small all-borders" style="text-decoration: none; border-color: grey; font-size: 10px; padding: 5px; margin: 0px; color: var(--sub-text-color);">ESSAY</p>
+                                    <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 10px; padding: 5px; margin: 0px; color: var(--sub-text-color);">NOV 2024</p>
+                                    <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 10px; padding: 5px; margin: 0px; color: var(--sub-text-color);">DATA & ANALYTICS</p>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -193,7 +218,7 @@
             </div>
             <div class="bottom-border" style="height: 20px"></div>
             <!-- Lists section -->
-            <div class="horizontal-align left-hug" style="display: flex; max-width:800px; align-items: stretch;">
+            <div class="horizontal-align left-hug bottom-border" style="display: flex; max-width:800px; align-items: stretch;">
                 <div class="all-padding right-border horizontal-align" style="flex: 1; align-items: flex-start;">
                     <p class="medium" style="margin: 0px; flex: 1;">BOOKS I ENJOYED</p>
                     <div class="right-hug" style="flex: 2;">
