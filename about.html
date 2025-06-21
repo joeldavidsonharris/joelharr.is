@@ -1,218 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel Harris</title>
-    <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --border-width: 1px;
-            --border-color: black;
-            --background-color: whitesmoke;
-            --text-color: black;
-            --sub-text-color: gray; 
-        }
-        body {
-            font-family: "Fragment Mono", monospace;
-            max-width: 800px;
-            box-sizing: border-box;
-            min-height: calc(100vh - 20px);
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-        div {
-            margin: 0px;
-            padding: 0px;
-        }
-        a:hover {
-            text-decoration: none;
-            text-decoration-color: var(--text-color);
-        }
-        .small {
-            font-size: 12px;
-        }
-        .medium {
-            font-size: 16px;
-        }
-        .large {
-            font-size: 20px;
-            font-weight: 500;
-        }
-        .post-icon {
-            width: 80px;
-            height: 80px;
-        }
-        .top-border {
-            border-top: var(--border-width) solid var(--border-color);
-        }
-        .left-border {
-            border-left: var(--border-width) solid var(--border-color);
-        }
-        .right-border {
-            border-right: var(--border-width) solid var(--border-color);
-        }
-        .bottom-border {
-            border-bottom: var(--border-width) solid var(--border-color);
-        }
-        .vertical-borders {
-            border-top: var(--border-width) solid var(--border-color);
-            border-bottom: var(--border-width) solid var(--border-color);
-        }
-        .side-borders {
-            border-left: var(--border-width) solid var(--border-color);
-            border-right: var(--border-width) solid var(--border-color);
-        }
-        .all-borders {
-            border: var(--border-width) solid var(--border-color);
-        }
-        .all-margin {
-            margin: 20px;
-        }
-        .all-padding {
-            padding: 10px;
-        }
-        .vertical-margin {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .side-margin {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .horizontal-align {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .vertical-align {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .right-hug {
-            margin-left: auto;
-        }
-        .left-hug {
-            margin-right: auto;
-        }
-        .scroll {
-            overflow-y: scroll;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .scroll-sideways {
-            overflow-x: scroll;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .simple-link {
-            color: inherit;
-            text-decoration: none;
-        }
-        .simple-link:hover {
-            color: inherit;
-            text-decoration: none;
-        }
-        .hover-underline:hover {
-            text-decoration: underline;
-        }
-        a p:hover {
-            text-decoration: underline;
-        }
-        a h1:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body class="all-borders">
-    <div>
-        <!-- Header -->
-        <div class="bottom-border horizontal-align" style="height: 60px;">
-            <!-- Title -->
-             <a href="/" class="simple-link">
-                 <h1 class="all-margin large" style="white-space: nowrap;">> joel harris</h1>
-             </a>
-            <!-- Blurb -->
-            <div class="left-border horizontal-align" style="height: 60px;">
-                <p class="small all-margin" style="text-align: justify;">Directory of things I create, learn, or want others to know about.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joel Harris</title>
+        <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                --border-width: 1px;
+                --border-color: black;
+                --background-color: whitesmoke;
+                --text-color: black;
+                --sub-text-color: gray;
+            }
+            body {
+                font-family: "Fragment Mono", monospace;
+                max-width: 50rem;
+                box-sizing: border-box;
+                min-height: calc(100vh - 1.25rem);
+                margin: 0.625rem auto;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                background-color: var(--background-color);
+                color: var(--text-color);
+            }
+            div {
+                margin: 0;
+                padding: 0;
+            }
+            a:hover {
+                text-decoration: none;
+                text-decoration-color: var(--text-color);
+            }
+            .small {
+                font-size: 0.75rem;
+            }
+            .medium {
+                font-size: 1rem;
+            }
+            .large {
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+            .post-icon {
+                width: 5rem;
+                height: 5rem;
+            }
+            .top-border {
+                border-top: var(--border-width) solid var(--border-color);
+            }
+            .left-border {
+                border-left: var(--border-width) solid var(--border-color);
+            }
+            .right-border {
+                border-right: var(--border-width) solid var(--border-color);
+            }
+            .bottom-border {
+                border-bottom: var(--border-width) solid var(--border-color);
+            }
+            .vertical-borders {
+                border-top: var(--border-width) solid var(--border-color);
+                border-bottom: var(--border-width) solid var(--border-color);
+            }
+            .side-borders {
+                border-left: var(--border-width) solid var(--border-color);
+                border-right: var(--border-width) solid var(--border-color);
+            }
+            .all-borders {
+                border: var(--border-width) solid var(--border-color);
+            }
+            .all-margin {
+                margin: 1.25rem;
+            }
+            .all-padding {
+                padding: 0.625rem;
+            }
+            .vertical-margin {
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
+            .side-margin {
+                margin-left: 1.25rem;
+                margin-right: 1.25rem;
+            }
+            .horizontal-align {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .vertical-align {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .right-hug {
+                margin-left: auto;
+            }
+            .left-hug {
+                margin-right: auto;
+            }
+            .scroll {
+                overflow-y: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .scroll-sideways {
+                overflow-x: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .simple-link {
+                color: inherit;
+                text-decoration: none;
+            }
+            .simple-link:hover {
+                color: inherit;
+                text-decoration: none;
+            }
+            .hover-underline:hover {
+                text-decoration: underline;
+            }
+            a p:hover {
+                text-decoration: underline;
+            }
+            a h1:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body class="all-borders">
+        <div>
+            <!-- Header -->
+            <div class="bottom-border horizontal-align" style="height: 3.75rem;">
+                <a href="/" class="simple-link">
+                    <h1 class="all-margin large" style="white-space: nowrap;">&gt; joel harris</h1>
+                </a>
+                <div class="left-border horizontal-align" style="height: 3.75rem;">
+                    <p class="small all-margin" style="text-align: justify;">
+                        Directory of things I create, learn, or want others to know about.
+                    </p>
+                </div>
+                <div class="left-border horizontal-align right-hug" style="height: 3.75rem;">
+                    <a href="/essays.html" class="simple-link">
+                        <p class="all-margin medium">Essays</p>
+                    </a>
+                    <a href="/projects.html" class="simple-link">
+                        <p class="all-margin medium">Projects</p>
+                    </a>
+                    <a href="/about.html" class="simple-link">
+                        <p class="all-margin medium" style="text-decoration: underline; text-decoration-color: rgb(225, 133, 94);">About</p>
+                    </a>
+                </div>
             </div>
-            <!-- Navigation -->
-            <div class="left-border horizontal-align right-hug" style="height: 60px;">
-                <a href="/essays.html" class="simple-link">
-                    <p class="all-margin medium">Essays</p>
-                </a>
-                <a href="/projects.html" class="simple-link">
-                    <p class="all-margin medium">Projects</p>
-                </a>
-                <a href="/about.html" class="simple-link">
-                    <p class="all-margin medium" style="text-decoration: underline; text-decoration-color: rgb(225, 133, 94);">About</p>
-                </a>
-            </div>
-        </div>
-        <div class="bottom-border" style="height: 20px;"></div>
-        <!-- Content -->
-        <div class="horizontal-align scroll" style="align-items: flex-start; height: calc(100vh - 176px);">
-            <!-- Bio -->
-            <div class="vertical-align all-margin" style="flex: 5; align-items: flex-start;">
-                <p style="margin-top: 0px; font-size: 14px;">Hi, I’m Joel. I enjoy making software and researching areas I find interesting. I also enjoy acrylic painting and photography.</p>
-                <p style="margin-top: 0px; font-size: 14px;">I currently work at Snowflake as a solution engineer.</p>
-                <p style="margin-top: 0px; font-size: 14px;">This site is a place for me to document my projects, thoughts, and anything interesting I find during my research.</p>
-                <p style="margin-top: 0px; margin-bottom: 4px; font-size: 14px;">I’m especially interested in:</p>
-                <ul style="margin-top: 0px; font-size: 14px;">
-                <li style="margin-top: 3px;">Data analytics and artificial intelligence</li>
-                <li style="margin-top: 3px;">Fractals and chaos</li>
-                <li style="margin-top: 3px;">Mental models and learning methods</li>
-                <li style="margin-top: 3px;">Computer graphics</li>
-                </ul>
+            <div class="bottom-border" style="height: 1.25rem;"></div>
 
-            </div>
-            <!-- Stats -->
-            <div class="vertical-align all-margin" style="flex: 3; align-items: stretch;">
-                <div class="all-borders all-padding">
-                    <img src="/images/general/bio.jpg" style="width: 100%; display: block;">
+            <!-- Content -->
+            <div class="horizontal-align scroll" style="align-items: flex-start; height: calc(100vh - 11rem);">
+                <!-- Bio -->
+                <div class="vertical-align all-margin" style="flex: 5; align-items: flex-start;">
+                    <p style="margin-top: 0; font-size: 0.875rem;">
+                        Hi, I’m Joel. I enjoy making software and researching areas I find interesting. I also enjoy acrylic painting and photography.
+                    </p>
+                    <p style="margin-top: 0; font-size: 0.875rem;">
+                        I currently work at Snowflake as a solution engineer.
+                    </p>
+                    <p style="margin-top: 0; font-size: 0.875rem;">
+                        This site is a place for me to document my projects, thoughts, and anything interesting I find during my research.
+                    </p>
+                    <p style="margin-top: 0; margin-bottom: 0.25rem; font-size: 0.875rem;">
+                        I’m especially interested in:
+                    </p>
+                    <ul style="margin-top: 0; font-size: 0.875rem;">
+                        <li style="margin-top: 0.1875rem;">Data analytics and artificial intelligence</li>
+                        <li style="margin-top: 0.1875rem;">Fractals and chaos</li>
+                        <li style="margin-top: 0.1875rem;">Mental models and learning methods</li>
+                        <li style="margin-top: 0.1875rem;">Computer graphics</li>
+                    </ul>
                 </div>
-                <div class="bottom-border side-borders horizontal-align all-padding" style="padding-left: 10px; padding-right: 10px; flex: 1; align-items: flex-start;">
-                    <p class="small" style="font-size: 14px; margin: 0px; flex: 1;">LOCATION</p>
-                    <div class="right-hug" style="flex: 3;">
-                        <p class="small" style="font-size: 14px; text-align: right; margin-top: 0px; margin-bottom: 0px;">Melbourne</p>
+                <!-- Stats -->
+                <div class="vertical-align all-margin" style="flex: 3; align-items: stretch;">
+                    <div class="all-borders all-padding">
+                        <img src="/images/general/bio.jpg" style="width: 100%; display: block;">
+                    </div>
+                    <div class="bottom-border side-borders horizontal-align all-padding" style="padding-left: 0.625rem; padding-right: 0.625rem; flex: 1; align-items: flex-start;">
+                        <p class="small" style="font-size: 0.875rem; margin: 0; flex: 1;">LOCATION</p>
+                        <div class="right-hug" style="flex: 3;">
+                            <p class="small" style="font-size: 0.875rem; text-align: right; margin: 0;">
+                                Melbourne
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom-border side-borders horizontal-align all-padding" style="padding-left: 0.625rem; padding-right: 0.625rem; flex: 1; align-items: flex-start;">
+                        <p class="small" style="font-size: 0.875rem; margin: 0; flex: 1;">EDUCATION</p>
+                        <div class="right-hug" style="flex: 3;">
+                            <p class="small" style="font-size: 0.875rem; text-align: right; margin: 0;">
+                                Computer Science
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="bottom-border side-borders horizontal-align all-padding" style="padding-left: 10px; padding-right: 10px; flex: 1; align-items: flex-start;">
-                    <p class="small" style="font-size: 14px; margin: 0px; flex: 1;">EDUCATION</p>
-                    <div class="right-hug" style="flex: 3;">
-                        <p class="small" style="font-size: 14px; text-align: right; margin-top: 0px; margin-bottom: 0px;">Computer Science</p>
-                    </div>
+            </div>
+
+            <div class="top-border" style="height: 1.25rem;"></div>
+
+            <!-- Footer -->
+            <div class="top-border horizontal-align" style="height: 3.125rem;">
+                <p class="medium left-hug side-margin">LINKS</p>
+                <div class="horizontal-align right-hug" style="height: 3.125rem;">
+                    <a href="https://www.linkedin.com/in/joel-davidson-harris/" class="simple-link">
+                        <p class="medium all-margin">LinkedIn</p>
+                    </a>
+                    <a href="https://github.com/joeldavidsonharris" class="simple-link">
+                        <p class="medium all-margin">GitHub</p>
+                    </a>
+                    <a href="https://medium.com/@joeldavidsonharris" class="simple-link">
+                        <p class="medium all-margin">Medium</p>
+                    </a>
                 </div>
-             </div>
-        </div>
-        <div class="top-border" style="height: 20px"></div>
-        <!-- Footer -->
-        <div class="top-border horizontal-align" style="height: 50px;">
-            <p class="medium left-hug side-margin">LINKS</p>
-            <!-- Social links -->
-            <div class="horizontal-align right-hug" style="height: 50px;">
-                <a href="https://www.linkedin.com/in/joel-davidson-harris/" class="simple-link">
-                    <p class="medium all-margin">LinkedIn</p>   
-                </a>
-                <a href="https://github.com/joeldavidsonharris" class="simple-link">
-                    <p class="medium all-margin">GitHub</p>
-                </a>
-                <a href="https://medium.com/@joeldavidsonharris" class="simple-link">
-                    <p class="medium all-margin">Medium</p>
-                </a>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
