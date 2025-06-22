@@ -1,0 +1,137 @@
+/* Desktop */
+:root {
+    --border-color: black;
+    --background-color: whitesmoke;
+    --text-color: black;
+    --sub-text-color: gray;
+    --border-width: 1px;
+}
+
+body {
+    font-family: "Fragment Mono", monospace;
+    max-width: 50rem;
+    margin: 0.625rem auto;
+    min-height: calc(100vh - 1.25rem);
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+}
+
+div, p, img {
+    margin: 0rem;
+    padding: 0rem;
+    border-width: 1px;
+    border-color: var(--border-color);
+}
+
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.padding {
+    padding: 0.625rem;
+}
+
+.margin {
+    margin: 1.25rem;
+}
+
+.post-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.tag {
+    margin-top: 1rem;
+    border-color: var(--sub-text-color);
+    font-size: 0.65rem;
+    color: var(--sub-text-color);
+    white-space: nowrap;
+}
+
+.horizontal-scroll {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.vertical-scroll {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: calc(100vh - 9.5rem); 
+}
+
+.painting {
+    height:7.5rem;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #e1855e;
+}
+
+.lists {
+    border-style: solid;
+    border-bottom-style: none;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    body {
+        min-height: 0rem;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        border-top-style: solid;
+    }
+
+    .post-icon {
+        width: 3rem;
+    }
+
+    .lists {
+        flex-direction: column;
+        border-style: none;
+    }
+
+    .left-list {
+        border-style: solid;
+    }
+
+    .right-list {
+        margin-top: 1.25rem;
+        border-style: solid;
+        border-bottom-style: none;
+    }
+
+    .vertical-scroll {
+        overflow-y: inherit;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        height: auto;
+    }
+}

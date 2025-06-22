@@ -1,302 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Joel Harris</title>
-        <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --border-width: 1px;
-                --border-color: black;
-                --background-color: whitesmoke;
-                --text-color: black;
-                --sub-text-color: gray;
-            }
-            body {
-                font-family: "Fragment Mono", monospace;
-                max-width: 50rem;
-                box-sizing: border-box;
-                min-height: calc(100vh - 1.25rem);
-                margin: 0.625rem auto;
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                background-color: var(--background-color);
-                color: var(--text-color);
-            }
-            div {
-                margin: 0;
-                padding: 0;
-            }
-            a:hover {
-                text-decoration: none;
-                text-decoration-color: var(--text-color);
-            }
-            .small {
-                font-size: 0.75rem;
-            }
-            .medium {
-                font-size: 1rem;
-            }
-            .large {
-                font-size: 1.25rem;
-                font-weight: 500;
-            }
-            .post-icon {
-                width: 5rem;
-                height: 5rem;
-            }
-            .top-border {
-                border-top: var(--border-width) solid var(--border-color);
-            }
-            .left-border {
-                border-left: var(--border-width) solid var(--border-color);
-            }
-            .right-border {
-                border-right: var(--border-width) solid var(--border-color);
-            }
-            .bottom-border {
-                border-bottom: var(--border-width) solid var(--border-color);
-            }
-            .vertical-borders {
-                border-top: var(--border-width) solid var(--border-color);
-                border-bottom: var(--border-width) solid var(--border-color);
-            }
-            .side-borders {
-                border-left: var(--border-width) solid var(--border-color);
-                border-right: var(--border-width) solid var(--border-color);
-            }
-            .all-borders {
-                border: var(--border-width) solid var(--border-color);
-            }
-            .all-margin {
-                margin: 1.25rem;
-            }
-            .all-padding {
-                padding: 0.625rem;
-            }
-            .vertical-margin {
-                margin-top: 1.25rem;
-                margin-bottom: 1.25rem;
-            }
-            .side-margin {
-                margin-left: 1.25rem;
-                margin-right: 1.25rem;
-            }
-            .horizontal-align {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-            .vertical-align {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .right-hug {
-                margin-left: auto;
-            }
-            .left-hug {
-                margin-right: auto;
-            }
-            .scroll {
-                overflow-y: scroll;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            .scroll-sideways {
-                overflow-x: scroll;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            .simple-link {
-                color: inherit;
-                text-decoration: none;
-            }
-            .simple-link:hover {
-                color: inherit;
-                text-decoration: none;
-            }
-            .hover-underline:hover {
-                text-decoration: underline;
-            }
-            a p:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body class="all-borders">
-        <div>
-            <!-- Header -->
-            <div class="bottom-border horizontal-align" style="height: 3.75rem;">
-                <a href="/" style="color: inherit;">
-                    <h1 class="all-margin large" style="white-space: nowrap; text-decoration: underline; text-decoration-color: #e1855e;">
-                        &gt; joel harris
-                    </h1>
-                </a>
-                <div class="left-border horizontal-align" style="height: 3.75rem;">
-                    <p class="small all-margin" style="text-align: justify;">
-                        Directory of things I create, learn, or want others to know about.
-                    </p>
-                </div>
-                <div class="left-border horizontal-align right-hug" style="height: 3.75rem;">
-                    <a href="/essays.html" class="simple-link">
-                        <p class="all-margin medium">Essays</p>
-                    </a>
-                    <a href="/projects.html" class="simple-link">
-                        <p class="all-margin medium">Projects</p>
-                    </a>
-                    <a href="/about.html" class="simple-link">
-                        <p class="all-margin medium">About</p>
-                    </a>
-                </div>
-            </div>
-            <div class="bottom-border" style="height: 1.25rem;"></div>
-
-            <!-- Content -->
-            <div class="scroll" style="height: calc(100vh - 11rem);">
-                <!-- Featured posts -->
-                <div class="horizontal-align left-hug bottom-border" style="align-items: flex-start;">
-                    <p class="medium vertical-margin" style="writing-mode: vertical-rl; transform: rotate(180deg);">
-                        FEATURED POSTS
-                    </p>
-                    <div class="vertical-align left-border" style="flex: 1; align-items: stretch;">
-                        <!-- Post 1 -->
-                        <a href="/posts/making-this-website.html" class="simple-link">
-                            <div class="all-padding horizontal-align">
-                                <img src="/images/post-icons/making-this-website-icon.jpg" class="post-icon">
-                                <div class="side-margin">
-                                    <div>
-                                        <p class="medium" style="margin-bottom: 0.3125rem; margin-top: 0;">
-                                            Why I (re)made this website
-                                        </p>
-                                        <p class="small" style="margin-top: 0; color: var(--sub-text-color); text-decoration: none;">
-                                            And why it looks like this
-                                        </p>
-                                    </div>
-                                    <div class="horizontal-align" style="align-self: flex-end;">
-                                        <p class="small all-borders" style="text-decoration: none; border-color: grey; font-size: 0.625rem; padding: 0.3125rem; margin: 0; color: var(--sub-text-color);">
-                                            PROJECT
-                                        </p>
-                                        <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 0.625rem; padding: 0.3125rem; margin: 0; color: var(--sub-text-color);">
-                                            JUN 2025
-                                        </p>
-                                        <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 0.625rem; padding: 0.3125rem; margin: 0; color: var(--sub-text-color);">
-                                            PERSONAL WEBSITE
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <!-- Post 2 -->
-                        <a href="/posts/data-team-language.html" class="simple-link">
-                            <div class="all-padding horizontal-align top-border">
-                                <img src="/images/post-icons/data-team-language-icon.jpg" class="post-icon">
-                                <div class="side-margin">
-                                    <div>
-                                        <p class="medium" style="margin-bottom: 0.3125rem; margin-top: 0;">
-                                            What language should a data team speak?
-                                        </p>
-                                        <p class="small" style="margin-top: 0; color: var(--sub-text-color); text-decoration: none;">
-                                            And the need for a business glossary
-                                        </p>
-                                    </div>
-                                    <div class="horizontal-align" style="align-self: flex-end;">
-                                        <p class="small all-borders" style="text-decoration: none; border-color: grey; font-size: 0.625rem; padding: 0.3125rem; margin: 0; color: var(--sub-text-color);">
-                                            ESSAY
-                                        </p>
-                                        <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 0.625rem; padding: 0.3125rem; margin: 0; color: var(--sub-text-color);">
-                                            NOV 2024
-                                        </p>
-                                        <p class="small top-border bottom-border right-border" style="text-decoration: none; border-color: grey; font-size: 0.625rem; padding: 0.3125rem; margin: 0; color: var(--sub-text-color);">
-                                            DATA & ANALYTICS
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="bottom-border" style="height: 1.25rem;"></div>
-
-                <!-- Paintings section -->
-                <div class="horizontal-align left-hug bottom-border" style="align-items:flex-start; max-width:50rem;">
-                    <p class="medium vertical-margin" style="writing-mode:vertical-rl; transform:rotate(180deg);">
-                        PAINTINGS
-                    </p>
-                    <div class="horizontal-align left-border" style="flex:1 1 0; min-width:0; align-items:stretch;">
-                        <div class="scroll-sideways" style="display:flex; width:100%; overflow-x:auto; white-space:nowrap; font-size:0;">
-                            <img src="/images/paintings/hawea-painting.jpg" style="display:inline-block; height:7.5rem; padding:0.625rem">
-                            <img src="/images/paintings/lavendar-painting.jpg" class="left-border" style="display:inline-block; height:7.5rem; padding:0.625rem">
-                            <img src="/images/paintings/cabin-painting.jpg" class="left-border" style="display:inline-block; height:7.5rem; padding:0.625rem">
-                            <img src="/images/paintings/pond-painting.jpg" class="left-border" style="display:inline-block; height:7.5rem; padding:0.625rem">
-                            <img src="/images/paintings/sunset-painting.jpg" class="left-border" style="display:inline-block; height:7.5rem; padding:0.625rem">
-                            <img src="/images/paintings/road-painting.jpg" class="left-border" style="display:inline-block; height:7.5rem; padding:0.625rem">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Harris</title>
+    <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header" style="border-style: solid;">
+        <a href="/"><p class="padding underline title">> joel harris</p></a>
+        <div class="nav">
+            <a href="/essays.html"><p class="padding">Essays</p></a>
+            <a href="/posts.html"><p class="padding">Projects</p></a>
+            <a href="/about.html"><p class="padding">About</p></a>
+        </div>
+    </div>
+    <div class="padding" style="border-bottom-style: solid;"></div>
+    <div class="vertical-scroll" style="flex-direction: column; justify-content:flex-start;">
+        <div style="border-style: solid; border-top-style: none; flex-direction: column;">
+            <p class="padding" style="text-align: center; align-self: stretch; border-bottom-style: solid;">FEATURED POSTS</p>
+            <a href="/posts/making-this-website.html">
+                <div style="flex-direction: row;">
+                    <img src="/images/post-icons/making-this-website-icon.jpg" class="post-icon padding">
+                    <div class="padding" style="flex-direction: column; justify-content: space-between;">
+                        <p style="margin-top: 0.4rem;">Why I (re)made this website</p>
+                        <div style="align-items: flex-end; margin-bottom: 0.4rem;">
+                            <p class="tag padding" style="border-style: solid; padding: 0.4rem;">JUNE 2025</p>
+                            <p class="tag padding" style="border-style: solid; border-left-style: none; padding: 0.4rem;">PROJECT</p>
                         </div>
                     </div>
                 </div>
-                <div class="bottom-border" style="height: 1.25rem;"></div>
-
-                <!-- Lists section -->
-                <div class="horizontal-align left-hug bottom-border" style="max-width:50rem; align-items: stretch;">
-                    <div class="all-padding right-border horizontal-align" style="flex: 1; align-items: flex-start;">
-                        <p class="medium" style="margin: 0; flex: 1;">BOOKS I ENJOYED</p>
-                        <div class="right-hug" style="flex: 2;">
-                            <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0 0 0.4375rem 0;">Sapiens</p>
-                            <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0 0 0.4375rem 0;">Fabric of Our Cosmos</p>
-                            <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0 0 0.4375rem 0;">Chaos</p>
-                            <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0;">Dune</p>
-                        </div>
-                    </div>
-                    <div class="all-padding horizontal-align" style="flex: 1; align-items: flex-start;">
-                        <p class="medium" style="margin: 0; flex: 1;">BLOGS I<br>FOLLOW</p>
-                        <div class="right-hug" style="flex: 2;">
-                            <a href="https://www.paulgraham.com/articles.html" class="simple-link">
-                                <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0 0 0.4375rem 0;">
-                                    Paul Graham
-                                </p>
-                            </a>
-                            <a href="https://roundup.getdbt.com/archive?sort=top" class="simple-link">
-                                <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0 0 0.4375rem 0;">
-                                    Tristan Handy
-                                </p>
-                            </a>
-                            <a href="https://www.dwarkesh.com/s/blog" class="simple-link">
-                                <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0 0 0.4375rem 0;">
-                                    Dwarkesh Patel
-                                </p>
-                            </a>
-                            <a href="https://blog.asmartbear.com/popular/" class="simple-link">
-                                <p class="medium" style="font-size: 0.875rem; text-align: right; margin: 0;">
-                                    A Smart Bear
-                                </p>
-                            </a>
+            </a>
+            <a href="/posts/data-team-language.html">
+                <div style="flex-direction: row; border-top-style: solid;">
+                    <img src="/images/post-icons/data-team-language-icon.jpg" class="post-icon padding">
+                    <div class="padding" style="flex-direction: column; justify-content: space-between;">
+                        <p style="margin-top: 0.4rem;">What language should a data team speak?</p>
+                        <div style="align-items: flex-end; margin-bottom: 0.4rem;">
+                            <p class="tag padding" style="border-style: solid; padding: 0.4rem;">NOVEMBER 2024</p>
+                            <p class="tag padding" style="border-style: solid; border-left-style: none; padding: 0.4rem;">ESSAY</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="top-border" style="height: 1.25rem;"></div>
-
-            <!-- Footer -->
-            <div class="top-border horizontal-align" style="height: 3.125rem;">
-                <p class="medium left-hug side-margin">LINKS</p>
-                <div class="horizontal-align right-hug" style="height: 3.125rem;">
-                    <a href="https://www.linkedin.com/in/joel-davidson-harris/" class="simple-link">
-                        <p class="medium all-margin">LinkedIn</p>
-                    </a>
-                    <a href="https://github.com/joeldavidsonharris" class="simple-link">
-                        <p class="medium all-margin">GitHub</p>
-                    </a>
-                    <a href="https://medium.com/@joeldavidsonharris" class="simple-link">
-                        <p class="medium all-margin">Medium</p>
-                    </a>
-                </div>
+            </a>
+        </div>
+        <br>
+        <p class="padding" style="text-align: center; align-self: stretch; border-style: solid; border-bottom-style: none;">MY PAINTINGS</p>
+        <div style="border-style: solid;">
+            <div class="horizontal-scroll">
+                <img src="/images/paintings/hawea-painting.jpg" class="painting padding">
+                <img src="/images/paintings/lavendar-painting.jpg" class="painting padding" style="border-left-style: solid">
+                <img src="/images/paintings/cabin-painting.jpg" class="painting padding" style="border-left-style: solid">
+                <img src="/images/paintings/pond-painting.jpg" class="painting padding" style="border-left-style: solid">
+                <img src="/images/paintings/sunset-painting.jpg" class="painting padding" style="border-left-style: solid">
+                <img src="/images/paintings/road-painting.jpg" class="painting padding" style="border-left-style: solid">
             </div>
         </div>
-    </body>
+        <br>
+        <div class="lists">
+            <div class="left-list" style="flex: 1; flex-direction: column; border-right-style: solid; align-items: flex-start;">
+                <p class="padding" style="text-align: center; align-self: stretch; border-bottom-style: solid;">BOOKS I ENJOYED</p>
+                <p class="padding" style="padding-bottom: 0.2rem;">Fabric of Our Cosmos</p>
+                <p class="padding" style="padding-bottom: 0.2rem;">Chaos</p>
+                <p class="padding" style="padding-bottom: 0.2rem;">Sapiens</p>
+                <p class="padding">Dune</p>
+            </div>
+            <div class="right-list" style="flex: 1; flex-direction: column; align-items: flex-start;">
+                <p class="padding" style="text-align: center; align-self: stretch; border-bottom-style: solid;">BLOGS I READ</p>
+                <a class="padding" style="padding-bottom: 0.2rem;" href="https://www.paulgraham.com/articles.html"><p>Paul Graham</p></a>
+                <a class="padding" style="padding-bottom: 0.2rem;" href="https://roundup.getdbt.com/archive?sort=top"><p>Tristan Handy</p></a>
+                <a class="padding" style="padding-bottom: 0.2rem;" href="https://www.dwarkesh.com/s/blog"><p>Dwarkesh Patel</p></a>
+                <a class="padding" href="https://blog.asmartbear.com/popular/"><p>A Smart Bear</p></a>
+            </div>
+        </div>
+    </div>
+    <div class="padding" style="border-top-style: solid;"></div>
+    <div style="border-style: solid; flex-direction: row; justify-content: space-between;">
+        <p class="padding">LINKS</p>
+        <div>
+            <a href="https://www.linkedin.com/in/joel-davidson-harris/"><p class="padding">LinkedIn</p></a>
+            <a href="https://github.com/joeldavidsonharris"><p class="padding">GitHub</p></a>
+            <a href="https://medium.com/@joeldavidsonharris"><p class="padding">Medium</p></a>
+        </div>
+    </div>
+</body>
 </html>
