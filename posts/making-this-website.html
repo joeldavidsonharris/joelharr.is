@@ -1,237 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Website</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --border-width: 1px;
-                --border-color: black;
-                --background-color: whitesmoke;
-                --text-color: black;
-            }
-            body {
-                font-family: "Fragment Mono", monospace;
-                max-width: 50rem;
-                box-sizing: border-box;
-                min-height: calc(100vh - 1.25rem);
-                margin: 0.625rem auto;
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-                background-color: var(--background-color);
-                color: var(--text-color);
-            }
-            p, li {
-                font-size: 0.875rem;
-            }
-            li {
-                margin-bottom: 0.25rem;
-            }
-            div {
-                margin: 0;
-                padding: 0;
-            }
-            a:hover {
-                text-decoration: underline;
-                text-decoration-color: var(--text-color);
-            }
-            .small {
-                font-size: 0.75rem;
-            }
-            .medium {
-                font-size: 1rem;
-            }
-            .large {
-                font-size: 1.25rem;
-                font-weight: 500;
-            }
-            .post-icon {
-                width: 5rem;
-                height: 5rem;
-            }
-            .post-section {
-                margin-top: 2.5rem;
-                margin-bottom: 1.25rem;
-            }
-            .top-border {
-                border-top: var(--border-width) solid var(--border-color);
-            }
-            .left-border {
-                border-left: var(--border-width) solid var(--border-color);
-            }
-            .right-border {
-                border-right: var(--border-width) solid var(--border-color);
-            }
-            .bottom-border {
-                border-bottom: var(--border-width) solid var(--border-color);
-            }
-            .vertical-borders {
-                border-top: var(--border-width) solid var(--border-color);
-                border-bottom: var(--border-width) solid var(--border-color);
-            }
-            .side-borders {
-                border-left: var(--border-width) solid var(--border-color);
-                border-right: var(--border-width) solid var(--border-color);
-            }
-            .all-borders {
-                border: var(--border-width) solid var(--border-color);
-            }
-            .all-margin {
-                margin: 1.25rem;
-            }
-            .all-margin-slim {
-                margin: 0.625rem;
-            }
-            .all-padding {
-                padding: 0.625rem;
-            }
-            .bottom-margin {
-                margin-top: 0;
-                margin-bottom: 1.25rem;
-            }
-            .vertical-margin {
-                margin-top: 1.25rem;
-                margin-bottom: 1.25rem;
-            }
-            .side-margin {
-                margin-left: 1.25rem;
-                margin-right: 1.25rem;
-            }
-            .horizontal-align {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
-            .vertical-align {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .right-hug {
-                margin-left: auto;
-            }
-            .left-hug {
-                margin-right: auto;
-            }
-            .scroll {
-                overflow-y: scroll;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            .scroll-sideways {
-                overflow-x: scroll;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            body > div {
-                background-color: var(--background-color);
-            }
-            table {
-                margin: 2.5rem auto;
-                border-collapse: collapse;
-            }
-            th, td {
-                border: 1px solid var(--border-color);
-                font-size: 0.875rem;
-                padding: 0.5rem;
-                text-align: center;
-                font-weight: normal;
-                min-width: 4.375rem;
-            }
-            th,
-            td:first-child {
-                text-align: left;
-            }
-            .simple-link {
-                color: inherit;
-                text-decoration: none;
-            }
-            a h1:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body class="all-borders">
-        <div>
-            <!-- Header -->
-            <div class="bottom-border horizontal-align" style="height: 3.75rem;">
-                <a href="/" class="simple-link">
-                    <h1 class="all-margin large" style="white-space: nowrap;">&gt; joel harris</h1>
-                </a>
-                <div class="left-border horizontal-align" style="height: 3.75rem;">
-                    <p class="small all-margin" style="text-align: justify;">
-                        Directory of things I create, learn, or want others to know about.
-                    </p>
-                </div>
-                <div class="left-border horizontal-align right-hug" style="height: 3.75rem;">
-                    <a href="/essays.html" class="simple-link">
-                        <p class="all-margin medium">Essays</p>
-                    </a>
-                    <a href="/projects.html" class="simple-link">
-                        <p class="all-margin medium">Projects</p>
-                    </a>
-                    <a href="/about.html" class="simple-link">
-                        <p class="all-margin medium" style="text-decoration: underline; text-decoration-color: rgb(225, 133, 94);">
-                            About
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="bottom-border" style="height: 1.25rem;"></div>
-
-            <!-- Content -->
-            <div class="scroll" style="height: calc(100vh - 11rem);">
-                <p class="large all-margin" style="text-decoration: underline; text-decoration-color: rgb(225, 133, 94);">
-                    Why I (re)made this website
-                </p>
-                <div class="bottom-border" style="height: 0rem;"></div>
-                <div class="all-margin">
-                    <p>
-                        The previous version of this website was my first attempt at hand crafting a website, here it is:
-                    </p>
-                    <img src="/images/general/old-website.jpg" style="width: 31.25rem; display: block; margin: 1.875rem auto;">
-                    <p>
-                        Some might say it looks better than this site—and that may be true—but this new site feels more like me.
-                    </p>
-                    <p>
-                        People who use the internet often take for granted just how homogenous websites are. Title in the top left, nav items in the top right, a call to action in the middle, social links at the bottom. People aren’t really even cognisant of these design choices, and that’s the point.
-                    </p>
-                    <p>
-                        Typical website design is made to help us move through the web without having to stop and think, mostly because they’re trying to make money and they want you to get the checkout page as quickly as possible.
-                    </p>
-                    <p>
-                        Enter the personal website, here we are free to experiment, as this website is purely designed to lose me money (domain names aren’t free, especially ones as good as <a href="http://joelharr.is">joelharr.is</a>).
-                    </p>
-                    <p>
-                        The design of this website is expressly done to make you stop and orient yourself when you first arrive. So, make yourself at home, have a look around—I personally recommend checking out the art.
-                    </p>
-                    <p class="bottom-margin">
-                        P.s. if you’re wondering about the <code>.is</code> domain extension, it’s Icelandic. They send me nice emails about once a year.
-                    </p>
-                </div>
-            </div>
-            <div class="top-border" style="height: 1.25rem;"></div>
-
-            <!-- Footer -->
-            <div class="top-border horizontal-align" style="height: 3.125rem;">
-                <p class="medium left-hug side-margin">LINKS</p>
-                <div class="horizontal-align right-hug" style="height: 3.125rem;">
-                    <a href="https://www.linkedin.com/in/joel-davidson-harris/" class="simple-link">
-                        <p class="medium all-margin">LinkedIn</p>
-                    </a>
-                    <a href="https://github.com/joeldavidsonharris" class="simple-link">
-                        <p class="medium all-margin">GitHub</p>
-                    </a>
-                    <a href="https://medium.com/@joeldavidsonharris" class="simple-link">
-                        <p class="medium all-margin">Medium</p>
-                    </a>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Harris</title>
+    <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header" style="border-style: solid;">
+        <a href="/"><p class="padding title">> joel harris</p></a>
+        <div class="nav">
+            <a href="/essays.html"><p class="padding">Essays</p></a>
+            <a href="/projects.html"><p class="padding">Projects</p></a>
+            <a href="/about.html"><p class="padding">About</p></a>
         </div>
-    </body>
+    </div>
+    <div class="padding"></div>
+    <div class="vertical-scroll" style="flex-direction: column; border-style: solid;">
+        <p class="post-title underline" style="padding: 1.25rem">
+            Why I (re)made this website
+        </p>
+        <div class="margin post-body" style="flex-direction: column">
+            <p>
+                The previous version of this website was my first attempt at hand crafting a website, here it is:
+            </p>
+            <img class="post-image" src="/images/general/old-website.jpg">
+            <p>
+                Some might say it looks better than this site—and that may be true—but this new site feels more like me.
+            </p>
+            <p>
+                People who use the internet often take for granted just how homogenous websites are. Title in the top left, nav items in the top right, a call to action in the middle, social links at the bottom. People aren’t really even cognisant of these design choices, and that’s the point.
+            </p>
+            <p>
+                Typical website design is made to help us move through the web without having to stop and think, mostly because they’re trying to make money and they want you to get the checkout page as quickly as possible.
+            </p>
+            <p>
+                Enter the personal website, here we are free to experiment, as this website is purely designed to lose me money (domain names aren’t free, especially ones as good as <a href="http://joelharr.is">joelharr.is</a>).
+            </p>
+            <p>
+                The design of this website is expressly done to make you stop and orient yourself when you first arrive. So, make yourself at home, have a look around—I personally recommend checking out the art.
+            </p>
+            <p>
+                P.s. if you’re wondering about the <code>.is</code> domain extension, it’s Icelandic. They send me nice emails about once a year.
+            </p>
+        </div>
+    </div>
+    <div class="padding"></div>
+    <div style="border-style: solid; flex-direction: row; justify-content: space-between;">
+        <p class="padding">LINKS</p>
+        <div>
+            <a href="https://www.linkedin.com/in/joel-davidson-harris/"><p class="padding">LinkedIn</p></a>
+            <a href="https://github.com/joeldavidsonharris"><p class="padding">GitHub</p></a>
+            <a href="https://medium.com/@joeldavidsonharris"><p class="padding">Medium</p></a>
+        </div>
+    </div>
+</body>
 </html>
