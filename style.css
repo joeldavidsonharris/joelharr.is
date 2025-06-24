@@ -1,10 +1,19 @@
 /* Desktop */
 :root {
-    --border-color: black;
-    --background-color: whitesmoke;
-    --text-color: black;
-    --sub-text-color: gray;
+    --border-color: whitesmoke;
+    --background-color: rgb(43, 42, 48);
+    --text-color: whitesmoke;
+    --sub-text-color: rgb(172, 172, 172);
     --border-width: 1px;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --border-color: rgb(43, 42, 48);
+        --background-color: whitesmoke;
+        --text-color: rgb(43, 42, 48);
+        --sub-text-color: rgb(172, 172, 172);
+    }
 }
 
 body {
@@ -12,6 +21,49 @@ body {
     max-width: 50rem;
     margin: 0.625rem auto;
     min-height: calc(100vh - 1.25rem);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+body.dark-mode {
+    --border-color: whitesmoke;
+    --background-color: rgb(43, 42, 48);
+    --text-color: whitesmoke;
+    --sub-text-color: rgb(172, 172, 172);
+}
+
+body.force-dark {
+    --border-color: whitesmoke;
+    --background-color: rgb(43, 42, 48);
+    --text-color: whitesmoke;
+    --sub-text-color: rgb(172, 172, 172);
+}
+
+body.force-light {
+    --border-color: rgb(43, 42, 48);
+    --background-color: whitesmoke;
+    --text-color: rgb(43, 42, 48);
+    --sub-text-color: rgb(172, 172, 172);
+}
+
+body.dark-mode a:hover, body.force-dark a:hover, body.force-light a:hover {
+    text-decoration-color: var(--text-color);
+}
+
+body.dark-mode #darkModeToggle, body.force-dark #darkModeToggle, body.force-light #darkModeToggle {
+    color: var(--text-color);
+}
+
+#darkModeToggle {
+    transition: color 0.2s;
+}
+
+.dark-mode-btn {
+    margin: 0.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
 }
 
 div {
@@ -91,6 +143,10 @@ div, p, img {
 .underline {
     text-decoration: underline;
     text-decoration-color: #e1855e;
+}
+
+.about-right-border {
+    border-right-style: solid;
 }
 
 .lists {
@@ -227,5 +283,15 @@ td:first-child {
         width: auto;
         height: auto;
         border-style: none;
+    }
+
+    .about-right-border {
+        border-right-style: none;
+    }
+
+    .dark-mode-btn {
+        display: flex;
+        padding-bottom: 0.6rem;
+        padding-left: 0.6rem;
     }
 }
