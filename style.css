@@ -1,17 +1,17 @@
 /* Desktop */
 :root {
-    --border-color: whitesmoke;
+    --border-color: rgb(173, 173, 173);
     --background-color: rgb(43, 42, 48);
-    --text-color: whitesmoke;
+    --text-color: rgb(230, 230, 230);
     --sub-text-color: rgb(172, 172, 172);
     --border-width: 1px;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --border-color: rgb(43, 42, 48);
+        --border-color: rgb(124, 124, 124);
         --background-color: whitesmoke;
-        --text-color: rgb(43, 42, 48);
+        --text-color: rgb(75, 75, 75);
         --sub-text-color: rgb(172, 172, 172);
     }
 }
@@ -26,23 +26,23 @@ body {
 }
 
 body.dark-mode {
-    --border-color: whitesmoke;
+    --border-color: rgb(173, 173, 173);
     --background-color: rgb(43, 42, 48);
-    --text-color: whitesmoke;
+    --text-color: rgb(230, 230, 230);
     --sub-text-color: rgb(172, 172, 172);
 }
 
 body.force-dark {
-    --border-color: whitesmoke;
+    --border-color: rgb(173, 173, 173);
     --background-color: rgb(43, 42, 48);
-    --text-color: whitesmoke;
+    --text-color: rgb(230, 230, 230);
     --sub-text-color: rgb(172, 172, 172);
 }
 
 body.force-light {
-    --border-color: rgb(43, 42, 48);
+    --border-color: rgb(124, 124, 124);
     --background-color: whitesmoke;
-    --text-color: rgb(43, 42, 48);
+    --text-color: rgb(75, 75, 75);
     --sub-text-color: rgb(172, 172, 172);
 }
 
@@ -202,15 +202,20 @@ td:first-child {
     font-size: 1.8rem;
 }
 
-.post-body p {
+.post-body * {
     margin-bottom: 0.8rem;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+}
+
+.post-body p {
+    line-height: 1.3rem;
 }
 
 .post-section {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem !important;
     font-size: 1.1rem !important;
+    font-weight: 600;
 }
 
 .post-image {
