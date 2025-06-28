@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Harris</title>
+    <link rel="icon" href="/images/general/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header" style="border-style: solid;">
+        <a href="/"><p class="padding title">> joel harris</p></a>
+        <div class="nav">
+            <a href="/essays.html"><p class="padding">Essays</p></a>
+            <a href="/projects.html"><p class="padding">Projects</p></a>
+            <a href="/about.html"><p class="padding about-right-border">About</p></a>
+            <button id="darkModeToggle" class="dark-mode-btn">
+                <img id="darkModeIcon" src="/images/general/dark-mode.png" alt="Toggle dark mode" style="width: 1.3rem; height: 1.3rem; vertical-align: middle;">
+            </button>
+            <script src="/dark-mode.js"></script>
+        </div>
+    </div>
+    <div class="padding"></div>
+    <div class="vertical-scroll" style="flex-direction: column; border-style: solid;">
+        <p class="post-title underline" style="padding: 1.25rem">
+            JobMatcha - brewing a better job hunt
+        </p>
+        <div class="margin post-body" style="flex-direction: column">
+            <p class="post-section" style="margin-top: 1rem;">The background</p>
+            <p>JobMatcha is my first attempt at a full-stack website. It came about in January 2025 when I was moving to Australia. I quit my job in New Zealand and was looking for something in Australia.</p>
+            <p>I found the whole process needlessly manual. The issue was that I knew what I wanted, but I couldn’t effectively filter jobs based on that. A lot of the important information was only available when reading the whole job advert.</p>
+            <p>I liken it to Tinder – imagine if, instead of Tinder matches, you were provided with random profiles and had to search each one to see if you were really a match. You probably wouldn't use it for very long.</p>
+            
+            <img class="post-image" src="/images/general/job-matcha-running.png"/>
+            <p class="post-image-subtext">Searching for job matches in JobMatcha</p>
+
+            <p>I wanted job matches that came to me, and so, JobMatcha was born. You input your experience and what you’re looking for; it scrapes Seek, reads the job ads, and matches against your input.</p>
+            
+            <img class="post-image" src="/images/general/job-matcha-match.png"/>
+            <p class="post-image-subtext" style="margin-bottom: 0.5rem;">A job match. You can click the seek logo to apply</p>
+
+            <p class="post-section">The technical</p>
+            <p>Once I had it working locally, I needed to make it accessible to others. I had never worked on any real front-end, so I did what any good back-end engineer does and served my front-end from my back-end API:</p>
+            
+            <img class="post-image" src="/images/general/job-matcha-architecture.png"/>
+            <p class="post-image-subtext">And overview of the architecture</p>
+
+            <p>I got a domain name (<a href="www.jobmatcha.org">jobmatcha.org</a>), hosted it on Digital Ocean (for about five dollars a month), and hooked it up to GitHub so that it would automatically update whenever I publish code changes.</p>
+
+            <p class="post-section">The learnings</p>
+            <p>Ultimately, this was a learning exercise. I wanted to go through the motions of making a product, to give myself a baseline understanding and to feel some of the pain that motivates a better approach.</p>
+            <p class="post-sub-section">The good</p>
+            <ul>
+            <li>Learned how to get domains, get hosting, and deploy</li>
+            <li>Learned more JavaScript, CSS, and HTML</li>
+            <li>Learned some Flask and API stuff</li>
+            <li>Used a lot of generative AI-enhanced workflows for the front-end code</li>
+            <li>Nice colours, nice branding</li>
+            </ul>
+
+            <p class="post-sub-section">The bad</p>
+            <ul>
+            <li>Building on top of an unsupported API is not very smart – every time Seek updates their front-end my service breaks</li>
+            <li>I found it too taxing for the time saved
+                <ul>
+                <li>I needed to essentially rewrite my CV to save looking at around 20 job listings on a single platform</li>
+                <li>Most of the “advanced search” use cases are already covered by Seek’s existing search system</li>
+                </ul>
+            </li>
+            <li>It has no clear path to monetisation</li>
+            <li>It has high costs that scale with usage
+                <ul>
+                <li>Want to avoid large usage-based costs until I am happy committing capital</li>
+                </ul>
+            </li>
+            <li>Designing a product as I’m building it is hard</li>
+            </ul>
+
+            <p class="post-sub-section">For next time</p>
+            <ul>
+            <li>Spend a bit of time doing directed research and design prior to building
+                <ul>
+                <li>Things to understand:
+                    <ul>
+                    <li>Market size</li>
+                    <li>Competition</li>
+                    <li>Ability to scale</li>
+                    <li>Monetisation</li>
+                    <li>How to reach users</li>
+                    <li>Is there a network effect involved?</li>
+                    </ul>
+                </li>
+                <li>Things to design:
+                    <ul>
+                    <li>User journey</li>
+                    <li>Wireframes</li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li>Use a front-end framework such as Next.js
+                <ul>
+                <li>This can hopefully speed up UI development time once the learning curve is over</li>
+                </ul>
+            </li>
+            <li>Build monetisation into the next product
+                <ul>
+                <li>Need practice integrating Stripe</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="padding"></div>
+    <div style="border-style: solid; flex-direction: row; justify-content: space-between;">
+        <p class="padding">LINKS</p>
+        <div>
+            <a href="https://www.linkedin.com/in/joel-davidson-harris/"><p class="padding">LinkedIn</p></a>
+            <a href="https://github.com/joeldavidsonharris"><p class="padding">GitHub</p></a>
+            <a href="https://medium.com/@joeldavidsonharris"><p class="padding">Medium</p></a>
+        </div>
+    </div>
+</body>
+</html>
