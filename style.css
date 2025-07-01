@@ -251,6 +251,50 @@ td:first-child {
     .title {
         font-size: 2rem;
         text-align: center;
+        margin-right: 0.5rem;
+    }
+
+    .mobile-title-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        margin-bottom: 0.2rem;
+    }
+
+    .mobile-title-row .title {
+        flex: none;
+        text-align: center;
+        margin-right: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    .mobile-title-row #darkModeToggle {
+        border: none;
+        margin-left: 0.2rem;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        align-self: center;
+    }
+
+    .mobile-title-row #darkModeIcon {
+        border: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-title-row {
+        display: flex;
+    }
+
+    .header > a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .nav {

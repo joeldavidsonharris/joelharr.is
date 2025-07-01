@@ -12,14 +12,16 @@
 </head>
 <body>
     <div class="header" style="border-style: solid;">
-        <a href="/"><p class="padding underline title">&gt; joel harris</p></a>
+        <div class="mobile-title-row">
+            <a href="/"><p class="padding underline title">&gt; joel harris</p></a>
+            <button id="darkModeToggle" class="dark-mode-btn">
+                <img id="darkModeIcon" src="/images/general/dark-mode.png" alt="Toggle dark mode" style="width: 1.3rem; height: 1.3rem; vertical-align: middle; border: none;">
+            </button>
+        </div>
         <div class="nav">
             <a href="/essays.html"><p class="padding">Essays</p></a>
             <a href="/projects.html"><p class="padding">Projects</p></a>
             <a href="/about.html"><p class="padding about-right-border">About</p></a>
-            <button id="darkModeToggle" class="dark-mode-btn">
-                <img id="darkModeIcon" src="/images/general/dark-mode.png" alt="Toggle dark mode" style="width: 1.3rem; height: 1.3rem; vertical-align: middle;">
-            </button>
             <script src="/dark-mode.js"></script>
         </div>
     </div>
@@ -27,6 +29,18 @@
     <div class="vertical-scroll" style="flex-direction: column; justify-content:flex-start;">
         <div style="border-style: solid; border-top-style: none; flex-direction: column;">
             <p class="padding" style="text-align: center; align-self: stretch; border-bottom-style: solid;">FEATURED POSTS</p>
+            <a href="/posts/how-i-set-goals.html">
+                <div style="flex-direction: row; border-bottom-style: solid;">
+                    <img src="/images/post-icons/how-i-set-goals-icon.jpg" class="post-icon padding">
+                    <div class="padding" style="flex-direction: column; justify-content: space-between;">
+                        <p style="margin-top: 0.4rem;">How to set bad goals</p>
+                        <div style="align-items: flex-end; margin-bottom: 0.4rem;">
+                            <p class="tag padding" style="border-style: solid; padding: 0.4rem;">JULY 2025</p>
+                            <p class="tag padding" style="border-style: solid; border-left-style: none; padding: 0.4rem;">ESSAY</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
             <a href="/posts/making-this-website.html">
                 <div style="flex-direction: row;">
                     <img src="/images/post-icons/making-this-website-icon.jpg" class="post-icon padding">
@@ -41,7 +55,7 @@
             </a>
             <a href="/posts/job-matcha.html">
                 <div style="flex-direction: row; border-top-style: solid;">
-                    <img src="/images/post-icons/job-matcha-post-icon.jpg" class="post-icon padding">
+                    <img src="/images/post-icons/job-matcha-icon.jpg" class="post-icon padding">
                     <div class="padding" style="flex-direction: column; justify-content: space-between;">
                         <p style="margin-top: 0.4rem;">JobMatcha: brewing a better job hunt experience</p>
                         <div style="align-items: flex-end; margin-bottom: 0.4rem;">
